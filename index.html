@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatki</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/d7ee95e250.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <h1><i class="fa-solid fa-note-sticky"></i> MyNotes</h1>
+
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fa-solid fa-plus"></i> Dodaj</button>
+            <button class="delete-all icon"><i class="fa-solid fa-trash-can"></i> Usuń wszystkie</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+        <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Notatka #1</h3>
+                <button class="delete-note">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="note-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa eligendi at ullam dolore commodi optio?
+        </div>
+
+    </div>
+
+    <div class="note-panel">
+        <h2>Dodaj notatkę</h2>
+        <label for="category">Wybierz kategorię</label>
+        <select id="category">
+            <option value="0" disabled selected>- wybierz kategorię -</option>
+            <option value="1">Zakupy</option>
+            <option value="2">Praca</option>
+            <option value="3">Inne</option>
+        </select>
+
+        <label for="text">Wpisz treść notatki</label>
+        <textarea id="text"></textarea>
+
+        <p class="error">Uzupełnij wszystkie pola!</p>
+
+        <div class="panel-buttons">
+            <button class="save icon"><i class="fa-solid fa-floppy-disk"></i>Zapisz</button>
+            <button class="cancel icon"><i class="fa-solid fa-xmark"></i>Anuluj</button>
+        </div>
+    </div>
+</body>
+
+</html>
